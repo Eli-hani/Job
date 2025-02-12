@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Spartan", sans-serif;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #5ba4a4;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: -1;
+}
+
+body {
+    background-color: #effafa;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.selected-words-container {
+    margin: 100px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #ffffff; 
+    height: 30px;
+    padding: 24px;    
+    margin-bottom: 64px; 
+    border-radius: 5px; 
+}
+
+.maindv, .maindv-select {
+    margin: 100px auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 100%; // Change from fixed width to max-width
+    width: 90%; // Use percentage for responsiveness
+    height: auto; // Allow height to adjust based on content
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; // Allow items to wrap on smaller screens
+}
+
+.maindv img, .maindv-select img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.job {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #5ba4a4;
+}
+
+.job p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5ba4a4;
+    margin-right: 10px;
+}
+
+.jobtype {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.job-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.divkey {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.keyword {
+    background-color: #eef6f6;
+    color: #5ba4a4;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 950px) {
+    .maindv, .maindv-select {
+        width: 95%; // Adjust width for smaller screens
+    }
+}
+
+@media (min-width: 951px) {
+    .maindv, .maindv-select {
+        width: 90%; // Adjust width for larger screens
+    }
+}

@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #5ba4a4;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  z-index: -1;
+}
+
+body {
+  background-color: #effafa;
+  position: relative;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#selected-words-container {
+  display: none;
+}
+.selected-words-container {
+  margin: 100px auto;
+  margin-top: -20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  background-color: #ffffff;
+  width: 950px;
+  height: 30px;
+  padding: 24px;
+  margin-bottom: 64px;
+  border-radius: 5px;
+  
+}
+
+.selected-word {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  color: #5ba4a4;
+  background-color: #effafa;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+}
+
+.clrBtn{
+  margin-left: auto;
+  background-color: #ffffff;
+  color: #3f4444;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.clrBtn:hover{
+  color: #5ba4a4;
+  text-decoration: underline;
+  /* border-bottom: 1px solid #5ba4a4; */
+}
+
+.clear-button {
+  margin-left: auto;
+  background-color: #ffffff;
+  color: #3f4444;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.clear-button:hover {
+  color: #5ba4a4;
+}
+.clear-button .clear-button:hover {
+  color: #5ba4a4;
+}
+
+.maindv {
+  margin: 100px auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 950px;
+  height: 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+.maindv img {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+.maindv .container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.maindv .container .job {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #5ba4a4;
+}
+.maindv .container .job p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #5ba4a4;
+  margin-right: 10px;
+}
+.maindv .container .job .selected1 {
+  background-color: #5ba4a4;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-left: 5px;
+  top: 1px;
+}
+.maindv .container .job .selected2 {
+  background-color: #1d321e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-left: 5px;
+  top: 1px;
+}
+.maindv .container .jobtype {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.maindv .container .jobtype:hover {
+  color: #5ba4a4;
+}
+.maindv .container .job-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.maindv .container .job-details ul li {
+  margin-right: 15px;
+  color: #666;
+  font-size: 14px;
+  list-style-type: disc;
+}
+.maindv .divkey {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: auto;
+}
+.maindv .divkey .keyword {
+  background-color: #eef6f6;
+  color: #5ba4a4;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.maindv .divkey .keyword:hover {
+  background-color: #5ba4a4;
+  color: #fff;
+}
+
+.maindv-select {
+  margin: 100px auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 950px;
+  height: 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-left: 4px solid #5ba4a4;
+}
+.maindv-select img {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+.maindv-select .container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.maindv-select .container .job {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #5ba4a4;
+}
+.maindv-select .container .job p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #5ba4a4;
+  margin-right: 10px;
+}
+.maindv-select .container .job .selected1 {
+  background-color: #5ba4a4;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-left: 5px;
+  top: 1px;
+}
+.maindv-select .container .job .selected2 {
+  background-color: #1d321e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: auto;
+}
+.maindv-select .container .jobtype {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.maindv-select .container .jobtype:hover {
+  color: #5ba4a4;
+}
+.maindv-select .container .job-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.maindv-select .container .job-details ul li {
+  margin-right: 15px;
+  color: #666;
+  font-size: 14px;
+  list-style-type: disc;
+}
+.maindv-select .divkey {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: auto;
+}
+.maindv-select .divkey .keyword {
+  background-color: #eef6f6;
+  color: #5ba4a4;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.maindv-select .divkey .keyword:hover {
+  background-color: #5ba4a4;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
+
+/**************** Responsive ******************/
+@media (max-width: 950px) {
+  .selected-words-container, .maindv, .maindv-select {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .clear-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  header img {
+    width: 100%;
+  }
+}
+
+.lines {
+  display: none; 
+}
+.remove-icon {
+  background-color: #5ba4a4;
+  padding: 8px 10px ;
+  border-radius: 8px;
+  overflow: 1px;;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: all 0.3s ;
+}
+
+.remove-icon:hover {
+  color: #5ba4a4;
+}
+
+.selected-words-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1px; /* فاصله بین کلمات */
+}
+
+.word-container {
+  display: flex;
+  align-items: center;
+  background-color: #effafa;
+  border-radius: 8px;
+  padding: 1px 2px;
+}
+
+.selected-word {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5ba4a4;
+  margin-right: 1px; /* فاصله بین کلمه و آیکون */
+}
+
+.remove-icon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+}
+
+.remove-icon:hover {
+  color: #666;
+}
+
+/**************************************************************/
+@media (max-width: 600px) {
+  .maindv, .maindv-select {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 16px;
+  }
+
+  .maindv img, .maindv-select img {
+    position: absolute;
+    margin-top: -40px;
+    width: 6%; 
+  }
+
+  .maindv .container .job .selected1 .selected2 , .maindv-select .container .jobtype{
+    display: flex;
+    font-size: 10px;
+  }
+  .maindv-select .container .job .selected2  {
+    font-size: 8px;
+   }
+  .maindv-select .container .job .selected1 {
+    font-size: 8px;
+  }
+  .maindv .container .job .selected1 {
+    font-size: 8px;
+  }
+  .maindv .container .jobtype {
+    font-size: 12px;
+  }
+  .maindv-select .container .job-details ul li {
+    font-size: 10px;
+  }
+  .maindv .container .job-details ul li {
+    font-size: 10px;
+  }
+
+  .selected-word {
+    font-size: 10px; 
+  }
+  .maindv .divkey .keyword, .maindv-select .divkey .keyword {
+   text-align: right;
+    font-size: 10px; 
+    
+  }
+  .maindv .divkey .keyword, .maindv-select .divkey .keyword{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .maindv-select .divkey {
+  margin-top: 10px;
+  margin-right: auto;
+  gap: 20px;
+  }
+  .maindv .divkey{
+    display: flex;
+    margin-right: auto;
+    gap: 20px;
+  }
+  .lines {
+    display: block; 
+    height: 1px;
+    width: 510px; 
+    background-color: #292d28; 
+    margin: 0; 
+  }
+}
+
